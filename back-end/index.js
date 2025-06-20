@@ -6,7 +6,7 @@ const classroomRoutes = require('./routes/classroomRoutes');
 const studentRoutes = require('./routes/studentRoutes');
 const subjectRoutes = require('./routes/subjectRoutes');
 const teacherRoutes = require('./routes/teacherRoutes');
-// const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 app.use(express.json());
 
@@ -18,7 +18,7 @@ app.use('/api/classrooms', classroomRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/subjects', subjectRoutes);
 app.use('/api/teachers', teacherRoutes);
-// app.use('/api/users', userRoutes);
+app.use('/api/users', userRoutes);
 
 
 const PORT = process.env.PORT || 3000;
